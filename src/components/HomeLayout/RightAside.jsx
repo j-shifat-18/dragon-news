@@ -1,0 +1,18 @@
+import React from 'react';
+import SocialLogin from './SocialLogin';
+import FindUsOn from './FindUsOn';
+import QZone from './QZone';
+import BgImage from './BgImage';
+
+const RightAside = () => {
+    return (
+        <div className='space-y-8'>
+            <SocialLogin></SocialLogin>
+            <FindUsOn></FindUsOn>
+            <QZone></QZone>
+            <BgImage></BgImage>
+        </div>
+    );
+};
+
+export default RightAside;

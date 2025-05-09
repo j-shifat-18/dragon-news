@@ -49,6 +49,9 @@ const Login = () => {
             
             {error && <p className="text-red-700 text-xs">{error}</p>}
 
+
+            <div><Link to="/auth/forgot-password"  className="link link-hover">Forgot password?</Link></div>
+
             <button className="btn btn-neutral mt-4">Login</button>
           </form>
           <h2 className="font-semibold text-center">

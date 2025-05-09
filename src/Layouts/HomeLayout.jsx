@@ -31,6 +31,7 @@ const HomeLayout = () => {
           </div>
         </aside>
         <section className="main col-span-6">
+          <h2 className="font-semibold text-xl mb-5">Dragon News Home</h2>
           <Outlet></Outlet>
         </section>
         <aside className="col-span-3">

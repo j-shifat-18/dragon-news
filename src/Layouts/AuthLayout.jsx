@@ -6,7 +6,7 @@ import Loading from '../components/Loading';
 const AuthLayout = () => {
 
     const {state} = useNavigation();
-    console.log(state)
+    // console.log(state)
     return (
         <div className='bg-base-200 min-h-screen'>
             <header className='w-11/12 mx-auto pt-4 pb-6'>

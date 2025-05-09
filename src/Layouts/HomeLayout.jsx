@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router";
+import { Outlet, useLoaderData } from "react-router";
 import Header from "../components/Header";
 import LatestNews from "../components/LatestNews";
 import Navbar from "../components/Navbar";
@@ -8,12 +8,17 @@ import RightAside from "../components/HomeLayout/RightAside";
 import BgImage from "../components/HomeLayout/BgImage";
 
 const HomeLayout = () => {
+
+  const data = useLoaderData();
+
+  const breakingNews = data.filter(news=> news.others.is_today_pick == true);
+
   return (
     <div>
       <header>
         <Header></Header>
         <section className="w-11/12 mx-auto my-8">
-          <LatestNews></LatestNews>
+          <LatestNews breakingNews={breakingNews}></LatestNews>
         </section>
         <nav className="w-11/12 mx-auto my-8">
           <Navbar></Navbar>

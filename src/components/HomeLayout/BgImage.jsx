@@ -3,8 +3,8 @@ import bgImg from '../../assets/bg.png'
 
 const BgImage = () => {
     return (
-        <div>
-            <img src={bgImg} alt="" />
+        <div className='mt-4'>
+            <img className='w-full object-cover' src={bgImg} alt="" />
         </div>
     );
 };
